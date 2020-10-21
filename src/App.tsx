@@ -1,12 +1,18 @@
 import React from 'react';
-import { View, Text, SafeAreaView } from 'react-native';
+import { Text, SafeAreaView } from 'react-native';
+import { Provider as PaperProvider, Appbar } from 'react-native-paper';
+
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const App: React.FC = () => (
-	<SafeAreaView style={{ flex: 1 }}>
-		<Text>Advanced Template React Native</Text>
-		<Icon name="brain" size={30} color="blue" />
-	</SafeAreaView>
+	<PaperProvider>
+		<SafeAreaView style={{ flex: 1 }}>
+			<Appbar.Header>
+				<Appbar.Content title="WMS" subtitle="GPA" />
+				<Appbar.Action icon="magnify" onPress={() => {}} />
+			</Appbar.Header>
+		</SafeAreaView>
+	</PaperProvider>
 );
 
 export default App;
