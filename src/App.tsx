@@ -1,8 +1,6 @@
 import React from 'react';
-import { Text, SafeAreaView } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import { Provider as PaperProvider, Appbar } from 'react-native-paper';
-
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const App: React.FC = () => (
 	<PaperProvider>
