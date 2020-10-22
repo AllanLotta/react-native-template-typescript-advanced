@@ -1,15 +1,15 @@
 import React from 'react';
 import { SafeAreaView } from 'react-native';
-import { Provider as PaperProvider, Appbar } from 'react-native-paper';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { Provider } from 'react-redux';
+import Dashboard from './screens/dashboard';
+import { store } from './store';
 
 const App: React.FC = () => (
 	<PaperProvider>
-		<SafeAreaView style={{ flex: 1 }}>
-			<Appbar.Header>
-				<Appbar.Content title="WMS" subtitle="GPA" />
-				<Appbar.Action icon="magnify" onPress={() => {}} />
-			</Appbar.Header>
-		</SafeAreaView>
+		<Provider store={store}>
+			<Dashboard />
+		</Provider>
 	</PaperProvider>
 );
 
