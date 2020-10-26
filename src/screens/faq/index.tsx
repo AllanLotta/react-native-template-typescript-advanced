@@ -2,12 +2,12 @@ import React from 'react';
 import { SafeAreaView } from 'react-native';
 import { Title } from 'react-native-paper';
 
-const Dashboard: React.FC = () => {
+const Faq: React.FC = () => {
 	return (
 		<SafeAreaView style={{ flex: 1 }}>
-			<Title>Dashboard</Title>
+			<Title>FAQ</Title>
 		</SafeAreaView>
 	);
 };
 
-export default Dashboard;
+export default Faq;
