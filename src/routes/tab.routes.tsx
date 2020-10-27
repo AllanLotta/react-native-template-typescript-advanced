@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { View, TouchableOpacity, Image, Text } from 'react-native';
+import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -7,13 +6,11 @@ import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Dashboard from '../screens/dashboard';
-import TabButton from '../components/tabButton';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 const NavigationDrawerStructure = navigation => {
-	// Props to open/close the drawer
 	navigation.toggleDrawer();
 };
 
