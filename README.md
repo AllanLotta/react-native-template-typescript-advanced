@@ -1,4 +1,4 @@
-# GPA React Native Advanced Template
+# React Native Advanced Template
 
 Template base desenvolvido em [React Native](https://reactnative.dev/) com [Typescript](https://www.typescriptlang.org/)
 
